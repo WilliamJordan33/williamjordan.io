@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free E-Book | William Jordan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        .ebook-cover {
+            max-width: 450px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 32px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(to right, #2563eb, #9333ea);
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: 20px 48px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background: linear-gradient(to right, #1d4ed8, #7e22ce);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .cta-button {
+                width: 100%;
+                padding: 16px 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="no-code-mastery-ebook.png" alt="No-Code Mastery E-book Cover" class="ebook-cover">
+        
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeC7FOqd7RO9S9agCV91SU4R3nCIFtdyrS7z9LrtrlaAl4vmw/viewform?usp=header" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="cta-button">
+            Claim Free E-book Now
+        </a>
+    </div>
+</body>
+</html>

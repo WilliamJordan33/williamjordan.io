@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle, SheetHeader, SheetDescription } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,19 +28,17 @@ export default function Navigation() {
   }, [lastScrollY]);
 
   const scrollToSection = (sectionId: string) => {
-    setIsOpen(false); // Close mobile menu first
-    setTimeout(() => {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }, 300); // Wait for sheet to close
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const navItems = [
     { label: "Home", id: "home" },
-    { label: "AI Support", id: "ai-support" },
-    { label: "Web Development", id: "web-dev" },
+    { label: "About", id: "core-pillars" },
+    { label: "Services", id: "ai-pillar" },
+    { label: "Testimonials", id: "testimonials" },
     { label: "Contact", id: "contact" },
   ];
 
@@ -54,7 +51,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="text-xl font-bold">
-            <span className="text-primary">William</span> Jordan
+            <span className="text-primary">Transform</span> Consulting
           </div>
           
           {/* Desktop Navigation */}
@@ -71,18 +68,14 @@ export default function Navigation() {
           </div>
 
           {/* Mobile Navigation */}
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+          <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
             <SheetContent>
-              <SheetHeader className="sr-only">
-                <SheetTitle>Navigation</SheetTitle>
-                <SheetDescription>Navigate to sections</SheetDescription>
-              </SheetHeader>
-              <div className="flex flex-col space-y-6 mt-6">
+              <div className="flex flex-col space-y-6 mt-8">
                 {navItems.map((item) => (
                   <button
                     key={item.id}

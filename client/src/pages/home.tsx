@@ -1,19 +1,15 @@
-import Navigation from "@/components/navigation";
-import HeroSection from "@/components/hero-section";
-import AISupportSection from "@/components/ai-support-section";
-import WebDevSection from "@/components/web-dev-section";
+import SimpleNavigation from "@/components/simple-navigation";
+import ProfessionalServices from "@/components/professional-services";
+import ConsultationCTA from "@/components/consultation-cta";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
-import FullStackFlowDiagram from "@/components/fullstack-flow-diagram";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navigation />
-      <HeroSection />
-      <AISupportSection />
-      <WebDevSection />
-      <FullStackFlowDiagram />
+      <SimpleNavigation />
+      <ProfessionalServices />
+      <ConsultationCTA />
       <ContactSection />
       <Footer />
     </div>

@@ -1,0 +1,42 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+7:35:08 AM [express] serving on port 5000
+Browserslist: browsers data (caniuse-lite) is 12 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+7:35:23 AM [vite] hmr update /src/components/consultation-cta.tsx, /src/index.css?v=Z2EK4LAbnBZ9XAitcCZpb
+7:35:25 AM [vite] hmr update /src/components/consultation-cta.tsx, /src/index.css?v=Z2EK4LAbnBZ9XAitcCZpb (x2)
+7:35:33 AM [vite] page reload src/components/consultation-section.tsx
+7:35:36 AM [vite] page reload src/components/consultation-section.tsx (x2)
+7:35:38 AM [vite] page reload src/components/consultation-section.tsx (x3)
+7:36:03 AM [vite] hmr update /src/components/footer.tsx, /src/index.css?v=Z2EK4LAbnBZ9XAitcCZpb
+7:36:05 AM [vite] hmr update /src/components/footer.tsx, /src/index.css?v=Z2EK4LAbnBZ9XAitcCZpb (x2)
+7:36:06 AM [vite] hmr update /src/components/footer.tsx, /src/index.css?v=Z2EK4LAbnBZ9XAitcCZpb (x3)
+7:36:37 AM [vite] page reload src/components/services-section.tsx
+7:36:39 AM [vite] page reload src/components/services-section.tsx (x2)
+7:36:45 AM [vite] hmr update /src/components/professional-services.tsx, /src/index.css?v=Z2EK4LAbnBZ9XAitcCZpb
+7:36:45 AM [vite] Internal server error: Transform failed with 1 error:
+/home/runner/workspace/client/src/components/professional-services.tsx:144:7: ERROR: The character "}" is not valid inside a JSX element
+  Plugin: vite:esbuild
+  File: /home/runner/workspace/client/src/components/professional-services.tsx:144:0
+  
+  The character "}" is not valid inside a JSX element
+  142|            </section>
+  143|          </>
+  144|        )}
+     |         ^
+  145|      </div>);
+  146|  
+  
+      at failureErrorWithLog (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:524:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:191:23)

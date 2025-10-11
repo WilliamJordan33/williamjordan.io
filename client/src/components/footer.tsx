@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, MapPin, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, MapPin, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Footer() {
@@ -16,25 +16,26 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: Linkedin, href: "https://www.linkedin.com/in/william-jordan-97981a118/", label: "LinkedIn" },
-    { icon: Github, href: "https://github.com/WilliamJordan33", label: "GitHub" }
+    { icon: Github, href: "https://github.com/WilliamJordan33", label: "GitHub" },
+    { icon: Twitter, href: "https://x.com/Chosen_One_1234", label: "Twitter" }
   ];
 
   const quickLinks = [
-    { label: "Home", action: () => scrollToSection("home") },
-    { label: "AI Support", action: () => scrollToSection("ai-support") },
-    { label: "Web Development", action: () => scrollToSection("web-dev") },
+    { label: "Home", action: () => scrollToSection("hero") },
+    { label: "Services", action: () => scrollToSection("services") }, 
+    { label: "Consultation", action: () => scrollToSection("consultation") },
     { label: "Contact", action: () => scrollToSection("contact") }
   ];
 
   const services = [
-    "AI Customer Support Agents",
-    "Full-Stack Web Development",
-    "API Development & Integration",
-    "Business Process Automation"
+    "Custom Lead Magnet Creation",
+    "Value Proposition Development", 
+    "CRM Integration Strategy",
+    "Organic Marketing Guidance"
   ];
 
   const contactInfo = [
-    { icon: Mail, text: "williamjordan@time-ai.agency", href: "mailto:williamjordan@time-ai.agency" },
+    { icon: Mail, text: "williamjordan@williamjordan.io", href: "mailto:williamjordan@williamjordan.io" },
     { icon: MapPin, text: "San Francisco, CA", href: "#" }
   ];
 
@@ -50,14 +51,14 @@ export default function Footer() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              viewport={{ amount: 0.05, margin: "0px 0px -200px 0px" }}
+              viewport={{ once: true }}
             >
               <div className="mb-6">
                 <h3 className="text-2xl font-bold mb-4">
                   <span className="text-primary">William</span> Jordan
                 </h3>
                 <p className="text-muted-foreground">
-                  AI Expert & Full-Stack Developer creating intelligent solutions that drive business growth.
+                  OMLM Consultant helping businesses create custom Organic Marketing Lead Magnets that attract quality leads and integrate with your CRM. Free consultations—pay what you think it's worth.
                 </p>
               </div>
               <div className="flex space-x-4">
@@ -81,7 +82,7 @@ export default function Footer() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ amount: 0.05, margin: "0px 0px -200px 0px" }}
+              viewport={{ once: true }}
             >
               <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
               <ul className="space-y-3">
@@ -103,7 +104,7 @@ export default function Footer() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ amount: 0.05, margin: "0px 0px -200px 0px" }}
+              viewport={{ once: true }}
             >
               <h4 className="text-lg font-semibold mb-6">Services</h4>
               <ul className="space-y-3">
@@ -120,7 +121,7 @@ export default function Footer() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ amount: 0.05, margin: "0px 0px -200px 0px" }}
+              viewport={{ once: true }}
             >
               <h4 className="text-lg font-semibold mb-6">Get In Touch</h4>
               <div className="space-y-4">
@@ -135,15 +136,6 @@ export default function Footer() {
                   </a>
                 ))}
               </div>
-              
-              <div className="mt-6">
-                <Button
-                  onClick={() => scrollToSection("contact")}
-                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
-                >
-                  Start Your Project
-                </Button>
-              </div>
             </motion.div>
           </div>
         </div>
@@ -154,7 +146,7 @@ export default function Footer() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ amount: 0.05, margin: "0px 0px -200px 0px" }}
+          viewport={{ once: true }}
         >
           <div className="mb-4 md:mb-0">
             <p className="text-muted-foreground text-sm">
