@@ -264,9 +264,7 @@ export default function ProfessionalServices() {
                     className="max-w-md w-full h-auto mx-auto mb-16 rounded-lg shadow-2xl"
                   />
                   <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeC7FOqd7RO9S9agCV91SU4R3nCIFtdyrS7z9LrtrlaAl4vmw/viewform"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/ebook"
                   >
                     <Button 
                       size="lg"
