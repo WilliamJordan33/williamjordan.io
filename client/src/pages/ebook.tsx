@@ -16,7 +16,7 @@ export default function EbookPage() {
           />
           
           <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeC7FOqd7RO9S9agCV91SU4R3nCIFtdyrS7z9LrtrlaAl4vmw/viewform?usp=header"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeC7FOqd7RO9S9agCV91SU4R3nCIFtdyrS7z9LrtrlaAl4vmw/viewform"
             target="_blank"
             rel="noopener noreferrer"
           >
